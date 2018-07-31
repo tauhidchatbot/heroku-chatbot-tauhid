@@ -1,0 +1,157 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* !!! */
+}
+
+/*.centered {
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+}*/
+
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 10px;
+}
+
+.changethisone span{
+    background-color: #FFF;
+}
+
+.changethisone input{
+    border-right-style:none;
+}
+
+.login-border {
+  border-width: 2px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 27px;
+  border-style: solid;
+  border-color: buttonface;
+}
+
+/*#mid
+        {
+            margin-left: 250px;
+            margin-right: 250px;
+            bottom: 50px;
+            border: solid 1px buttonface;
+        text-align: center
+        }*/
+
+
+.sort-icon {
+font-size: 9px;
+margin-left: 5px;
+}
+
+th {
+    cursor:pointer;
+}
+
+a {
+  color: #00B7FF;
+}
+.login-border {
+  border-width: 2px;
+  border-style: solid;
+  border-color: buttonface;
+}
+.text-center {
+      text-align: center;
+  }
+
+ .item{
+  color: #fff;
+  height:31px;
+  width:59px;
+  padding: 05px;
+  background: #229EDC;
+  margin: 02px;
+}
+
+.edit {
+	color : #fff;
+	padding: 05px;
+	background: #229EDC;
+	margin: 02px;
+}
+.ngdialog.dialogwidth800 .ngdialog-content{width : 800px;}
+
+ /*now admin css==================*/
+
+.body{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.login{
+  position: absolute;
+  top: 100%
+  right : 35%;
+  height: 150px;
+  width: 1250px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.login input[type=text]{
+  width: 364px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 364px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  background-color: #555555;
+  /*border: 1px solid #fff;*/
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  /*font-family: 'Exo', sans-serif;*/
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
