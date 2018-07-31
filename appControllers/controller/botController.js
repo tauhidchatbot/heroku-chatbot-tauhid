@@ -46,7 +46,7 @@ exports.userRegistration = function(req, res) {
 
 exports.pizzabot = function(req, res) {
 
-console.log("hello tauhid pizza bot details");
+console.log("tauhid pizza bot details");
 
 if (req.body.result.action === "a_fetch_user_details") {
 	console.log("fetch user action fired");
