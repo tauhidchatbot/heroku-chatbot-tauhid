@@ -51,45 +51,6 @@ exports.userRegistration = function(req, res) {
 	})
 }
 
-/*exports.userRegistration = function(req, res) {
-	console.log("hello tauhid");
-	console.log(req.body);
-	var token = randomToken(16);
-	botDB.find({
-		username : req.body.username,
-		email    : req.body.email
-	}, function(err, data) {
-		console.log(data);
-		if(data.length > 0) {
-			res.json({
-				'message' : 'already user' + req.body.username,
-				'authentication' : false
-			});
-		} else {
-			var data = new botDB({
-				name : req.body.name,
-				username  : req.body.username,
-				email     : req.body.email,
-				password  : req.body.password,
-				token     : token,
-				Is_Active : false
-			});
-			data.save(function(err, data){
-				if (err) {
-					console.log(err);
-				} else {
-					console.log("saved successfully");
-				}
-			})
-			res.json({
-				'message' : 'registration completed',
-				'authentication' : true
-			})
-		}
-	})
-
-}*/
-
 
 /*43b5e081aa144babbfd72c48815f7aad
 
