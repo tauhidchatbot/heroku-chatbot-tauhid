@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var express = require('express');
 var path = require('path');
 
-
+console.log("hello controller");
 var bodyParser = require('body-parser');
 var botDB = mongoose.model('botModel');
 
