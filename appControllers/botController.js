@@ -7,7 +7,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var botDB = mongoose.model('botmodels');
 var randomToken = require('random-token');
-console.log("i m in controller");
+
 
 exports.userRegistration = function(req, res) {
 	var token = randomToken(16);
