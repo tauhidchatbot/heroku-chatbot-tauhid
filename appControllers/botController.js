@@ -53,7 +53,7 @@ exports.userRegistration = function(req, res) {
 
 e6ce4cf6989c4588a3b02a1dc17af540*/
 
-/*exports.pizzabot = function(req, res) {
+exports.pizzabot = function(req, res) {
 
 console.log("tauhid pizza bot details here");
 
@@ -79,4 +79,4 @@ if (req.body.result.action === "a_fetch_user_details") {
 	}
 }
 
-}*/
+}
