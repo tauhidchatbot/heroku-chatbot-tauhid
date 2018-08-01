@@ -1,21 +1,21 @@
-var model = require("../model/dbModel.js");
+var model = require("../model/botmodels.js");
 var mongoose = require('mongoose');
 var express = require('express');
 var path = require('path');
 
 
 var bodyParser = require('body-parser');
-var botDB = mongoose.model('botModel');
+var botDB = mongoose.model('botmodels');
 var randomToken = require('random-token');
-
 
 exports.userRegistration = function(req, res) {
 	var token = randomToken(16);
-	//console.log(req.body);
 	botDB.find({
 		username : req.body.username
 	}, function(err, data) {
-		//console.log(data);
+		/*console.log("hello tauhid");
+		console.log(data);
+		return;*/
 		if (data.length > 0) {
 			res.json({
 				'message' : 'already user' + req.body.username,
@@ -30,12 +30,8 @@ exports.userRegistration = function(req, res) {
 				token     : token,
 				Is_Active : false
 			});
-			   console.log(saveData);
-			  /* saveData.save();
-			   return;*/
 			saveData.save(function(err, data){
 				console.log(data);
-				console.log('error value tauhid ' + " " + err);
 				//console.log(data);
 				if (err) {
 					console.log("err");
