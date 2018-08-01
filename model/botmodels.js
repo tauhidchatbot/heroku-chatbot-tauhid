@@ -14,7 +14,7 @@ var chatSchema = new Schema({
 		token     : {type: String}
 });
 
-var botModel = module.exports = mongoose.model('botModel', chatSchema);
+var botmodels = module.exports = mongoose.model('botmodels', chatSchema);
 
 
 
