@@ -61,6 +61,7 @@ console.log("tauhid pizza bot details here");
 if (req.body.result.action === "a_fetch_user_details") {
 	console.log("fetch user action fired");
 	if (req.body.result.parameters["username"] != "") {
+		console.log(req.body.result.parameters);
 		botDB.find({
 			username : req.body.username
 		}, function(err, data) {
