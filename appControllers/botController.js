@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 var botDB = mongoose.model('botmodels');
 var randomToken = require('random-token');
 
-
 exports.userRegistration = function(req, res) {
 	var token = randomToken(16);
 	botDB.find({
@@ -61,13 +60,7 @@ console.log("tauhid pizza bot details here");
 if (req.body.result.action === "a_fetch_user_details") {
 	console.log("fetch user action fired");
 	if (req.body.result.parameters["username"] != "") {
-		console.log(req.body.result.parameters);
-		botDB.find({
-			username : req.body.username
-		}, function(err, data) {
-			console.log(data);
-		})
-		/*return res.json({
+		return res.json({
 			speech : "Fetched user details",
 			displaytext : "welcome Tauhid Raza Khan!",
 			followupEvent : {
@@ -82,7 +75,7 @@ if (req.body.result.action === "a_fetch_user_details") {
 				name : "e_fetch_user_details"
 			},
 			source : "from tauhid"
-		});*/
+		});
 	}
 }
 
